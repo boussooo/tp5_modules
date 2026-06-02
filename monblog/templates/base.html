@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+<header >
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="80">
+    <h1 style="text-align: center;">Mon Blog ISI</h1>
+</header>
+    <main>
+        {% block contenu %}{% endblock %}
+    </main>
+    <footer><p>© ISI 2026</p></footer>
+</body>
+</html>
